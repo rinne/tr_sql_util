@@ -1,0 +1,18 @@
+
+             -*-    tr_sql_util    -*-
+
+Small utilities that I personally find useful in MySQL.
+
+Copyright © Timo J. Rinne <tri@iki.fi>
+
+This set of tools is licensed under the terms of
+GNU Lesser General Public License (version 3),
+which is available in various formats under
+https://www.gnu.org/licenses/
+
+init-db.sql   Purge and re-initialize the TR_UTIL database.
+obj.sql       Object library to store tag/value pairs into
+              an object represented by a sting (a blob actually)
+id.sql        Generate and decode unique identifiers for
+              various uses
+string.sql    String stuff used by other modules
