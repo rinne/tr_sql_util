@@ -5,10 +5,10 @@ Small utilities that I personally find useful in MySQL.
 
 Copyright © Timo J. Rinne <tri@iki.fi>
 
-This set of tools is licensed under the terms of
-GNU Lesser General Public License (version 3),
-which is available in various formats under
-https://www.gnu.org/licenses/
+This set of tools is licensed under the terms
+of MIT License as expressed in the file COPYING
+in the root directory of this repository.
+
 
 init-db.sql   Purge and re-initialize the TR_UTIL database.
 obj.sql       Object library to store tag/value pairs into
