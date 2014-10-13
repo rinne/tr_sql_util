@@ -1,3 +1,11 @@
+-- 
+-- Copyright © Timo J. Rinne <tri@iki.fi>
+-- 
+-- This set of tools is licensed under the terms
+-- of MIT License as expressed in the file COPYING
+-- in the root directory of this repository.
+-- 
+
 CREATE DATABASE IF NOT EXISTS TR_UTIL;
 ALTER DATABASE TR_UTIL DEFAULT CHARACTER SET 'utf8' DEFAULT COLLATE 'utf8_general_ci';
 
@@ -58,7 +66,7 @@ BEGIN
   ELSE
     SET rv = str;
   END IF;
-  RETURN rv;  
+  RETURN rv;
 END; //
 
 DELIMITER ;
@@ -119,4 +127,3 @@ BEGIN
 END; //
 
 DELIMITER ;
-

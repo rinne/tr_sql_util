@@ -1,3 +1,11 @@
+-- 
+-- Copyright © Timo J. Rinne <tri@iki.fi>
+-- 
+-- This set of tools is licensed under the terms
+-- of MIT License as expressed in the file COPYING
+-- in the root directory of this repository.
+-- 
+
 CREATE DATABASE IF NOT EXISTS TR_UTIL;
 ALTER DATABASE TR_UTIL DEFAULT CHARACTER SET 'utf8' DEFAULT COLLATE 'utf8_general_ci';
 
@@ -81,7 +89,7 @@ BEGIN
   IF v IS NULL THEN
     RETURN NULL;
   END IF;
-  RETURN __OBJ_SET_RAW(obj, tag, v);  
+  RETURN __OBJ_SET_RAW(obj, tag, v);
 END; //
 
 DELIMITER ;
@@ -293,7 +301,7 @@ BEGIN
     SET sign = '';
   ELSE
    RETURN '0.0';
-  END IF;  
+  END IF;
   SET exp = FLOOR(LOG10(n));
   SET sig = n / POW(10, exp);
   SET rv = CONCAT(sign, CAST(ROUND(sig, 19) AS BINARY));
